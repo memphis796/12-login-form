@@ -1,0 +1,55 @@
+.top-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 40vh;
+  background-image: url('/bg-login-top.png');
+}
+
+.top-img {
+  padding-bottom: $gutter;
+}
+
+.bottom-form {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  background-image: url('/bg-login.png');
+}
+
+.input-field {
+  display: flex;
+  justify-content: flex-end;
+  margin: $gutter 0;
+}
+
+.label-name {
+  padding: 0.4rem 1.5rem;
+  color: $brand-text-btn-color;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+
+.login-form__email {
+  &__password {
+    padding: 0 3rem;
+    border-radius: $brand-border-radius;
+  }
+}
+
+.login-form__validation-message {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sign-in {
+  border: 0;
+  border-radius: $brand-border-radius;
+  background-color: $brand-btn-bg-color;
+  color: $brand-text-btn-color;
+  font-size: $gutter;
+}
+
+.btn-text {
+  text-shadow: $brand-text-shadow;
+}
