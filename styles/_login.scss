@@ -30,19 +30,18 @@
   font-size: 0.9rem;
 }
 
-.login-form__email {
-  &__password {
-    padding: 0 3rem;
-    border-radius: $brand-border-radius;
-  }
+.login-form__email,
+.login-form__password {
+  padding: 0 3rem;
+  border-radius: $brand-border-radius;
 }
 
-.login-form__validation-message {
+.login-form__btn {
   display: flex;
   justify-content: flex-end;
 }
 
-.sign-in {
+.login-form__sign-in {
   border: 0;
   border-radius: $brand-border-radius;
   background-color: $brand-btn-bg-color;
