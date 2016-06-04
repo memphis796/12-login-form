@@ -8,8 +8,9 @@ export default class LoginForm {
       { username: email, password: `honeycrisp` },
     ];
 
-    this.form.addEventListener(`submit`, (ev) => {
-      ev.preventDefault();
+    this.form.addEventListener(`submit`, (Event) => {
+      Event.preventDefault();
+
       this.validateInputs();
     });
   }
@@ -24,14 +25,14 @@ export default class LoginForm {
   }
 
   validateInputs() {
-    const emailInput = this.form.querySelector(`.login-form__email`);
-    const passwordInput = this.form.querySelector(`.login-form__password`);
+    const emailInput = this.form.querySelector(`.login-form__email`).value;
+    const passwordInput = this.form.querySelector(`.login-form__password`).value;
     const validationMessage = this.form.querySelector(`.login-form__validation-message`);
 
-    if (this.validate(emailInput.value, passwordInput.value)) {
-      validationMessage.innerHTML = ``;
+    if (this.validate(emailInput, passwordInput)) {
+      validationMessage.innerText = ``;
     } else {
-      validationMessage.innerHTML = `The credentials are invalid`;
+      validationMessage.innerText = `The credentials are invalid`;
     }
   }
 }
