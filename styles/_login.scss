@@ -10,7 +10,7 @@
   padding-bottom: $gutter;
 }
 
-.bottom-form {
+.login-form {
   display: flex;
   justify-content: center;
   height: 60vh;
@@ -51,4 +51,9 @@
 
 .btn-text {
   text-shadow: $brand-text-shadow;
+}
+
+.login-form__validation-message {
+  padding: 0 1rem;
+  color: $brand-text-btn-color;
 }
